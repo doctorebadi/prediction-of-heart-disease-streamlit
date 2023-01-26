@@ -7,7 +7,7 @@ import sklearn
 from sklearn.model_selection import train_test_split # to split the dataset for training and testing 
 from sklearn.metrics import accuracy_score
 
-data = pd.read_csv('mobile_prices.csv')
+data = pd.read_csv('Data1.csv')
 X = data.iloc[:, :-1].values
 y = data.iloc[:, -1].values
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=5)
