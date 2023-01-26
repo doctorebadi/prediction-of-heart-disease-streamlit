@@ -22,7 +22,7 @@ def user_input_features():
     features = pd.DataFrame(data, index=[0])
     return features
 
-#data = pd.read_csv('IRIS.csv')
+data1 = pd.read_csv('IRIS.csv')
 
 #X= data.iloc[:, :-1].values
 #Y= data.iloc[:, -1].values
