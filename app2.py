@@ -19,3 +19,7 @@ y_pred = svclassifier.predict(X_test)
 
 accuracy = accuracy_score(y_test, y_pred) * 100
 st.write(accuracy)
+
+n=np.array([842,0,2.2,0,1,0,7,0.6,188,2,2,20,756,2549,9,7,19,0,0,1]).shape(1,-1)
+svclassifier.predict(n)
+st.write(svclassifier.predict(n))
