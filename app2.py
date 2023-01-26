@@ -18,5 +18,4 @@ y_pred = svclassifier.predict(X_test)
 
 from sklearn.metrics import accuracy_score
 accuracy = accuracy_score(y_test, y_pred) * 100
-pd.crosstab(y_test, y_pred)
-st.write(pd)
+st.write(accuracy)
