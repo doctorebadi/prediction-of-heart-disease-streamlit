@@ -65,8 +65,7 @@ for percent_complete in range(100):
     
     
 st.subheader('Prediction')
-n=np.array(df).reshape(1,-1)
-z=svclassifier.predict(n)
+z=svclassifier.predict(df)
 st.write(z[0])
 
 
