@@ -30,8 +30,9 @@ def user_input_features():
     QRST = st.sidebar.slider('QRST', -135, 139, 76)
     J = st.sidebar.slider('J', 50, 104, 94)
     Heart_rate = st.sidebar.slider('Heart_rate', 0, 88, 55)
-    data = {'age': age,'Height': Height,'Weight': Weight,'QRS_duration': QRS_duration,'P_R_interval': P_R_interval,'Q_T_interval': Q_T_interval,'T_interval': T_interval,'P_interval': P_interval,'QRS': QRS,'T': T,'P': P,'QRST': QRST,'J': J,'Heart_rate': Heart_rate,}
-    features = pd.DataFrame(data, index=[0])
+    data = {'age': age,'Height': Height,'Weight': Weight,'QRS_duration': QRS_duration,'P_R_interval': P_R_interval,'Q_T_interval': Q_T_interval,'T_interval': T_interval,'P_interval': P_interval,'QRS': QRS,'T': T,'P': P,'QRST': QRST,'J': J,'Heart_rate': Heart_rate,
+            'age': age,'Height': Height,'Weight': Weight,'QRS_duration': QRS_duration,'P_R_interval': P_R_interval,'Q_T_interval': Q_T_interval,'T_interval': T_interval,'P_interval': P_interval,'QRS': QRS,'T': T,'P': P,'QRST': QRST,'J': J,'Heart_rate': Heart_rate,
+            }    features = pd.DataFrame(data, index=[0])
     return features
 
 
