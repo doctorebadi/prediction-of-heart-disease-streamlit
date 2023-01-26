@@ -14,17 +14,27 @@ st.write("""
 
 st.sidebar.header('User Input Parameters')
 
+
 def user_input_features():
-    sepal_length = st.sidebar.slider('Sepal length', 1, 79, 10)
-    sepal_width = st.sidebar.slider('Sepal width', 2.0, 4.4, 3.4)
-    petal_length = st.sidebar.slider('Petal length', 1.0, 6.9, 1.3)
-    petal_width = st.sidebar.slider('Petal width', 0.1, 2.5, 0.2)
-    data = {'sepal_length': sepal_length,
-            'sepal_width': sepal_width,
-            'petal_length': petal_length,
-            'petal_width': petal_width}
+    age = st.sidebar.slider('age', 1, 79, 50)
+    Height = st.sidebar.slider('Height', 10, 105, 80)
+    Weight = st.sidebar.slider('Weight', 69, 170, 5.4)
+    QRS_duration = st.sidebar.slider('QRS_duration',0, 294, 20)
+    P_R_interval = st.sidebar.slider('P_R_interval', 241, 450, 260)
+    Q_T_interval = st.sidebar.slider('Q_T_interval', 0, 294, 158)
+    T_interval = st.sidebar.slider('T_interval', 108, 381, 270)
+    P_interval = st.sidebar.slider('P_interval', 0, 183, 25)
+    QRS = st.sidebar.slider('QRS',-137, 169, -50)
+    T = st.sidebar.slider('T',-165, 175, 110)
+    P = st.sidebar.slider('P',-17, 154, 15)
+    QRST = st.sidebar.slider('QRST', -135, 139, 76)
+    J = st.sidebar.slider('J', 50, 104, 94)
+    Heart_rate = st.sidebar.slider('Heart_rate', 0, 88, 55)
+    data = {'age': age,'Height': Height,'Weight': Weight,'QRS_duration': QRS_duration,'P_R_interval': P_R_interval,'Q_T_interval': Q_T_interval,'T_interval': T_interval,'P_interval': P_interval,'QRS': QRS,'T': T,'P': P,'QRST': QRST,'J': J,'Heart_rate': Heart_rate,}
     features = pd.DataFrame(data, index=[0])
     return features
+
+
 df = user_input_features()
 
 
@@ -45,6 +55,6 @@ y_pred = svclassifier.predict(X_test)
 accuracy = accuracy_score(y_test, y_pred) * 100
 st.write(accuracy)
 
-n=np.array([75,0,190,80,91,193,371,174,121,-16,13,64,-2,63,0,75,0,190,80,95,190,401,169,125,-15,13,68,12,63,0]).reshape(1,-1)
-z=svclassifier.predict(n)
-st.write(z[0])
+#n=np.array([75,0,190,80,91,193,371,174,121,-16,13,64,-2,63,0,75,0,190,80,95,190,401,169,125,-15,13,68,12,63,0]).reshape(1,-1)
+#z=svclassifier.predict(n)
+#st.write(z[0])
