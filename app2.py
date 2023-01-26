@@ -23,6 +23,8 @@ def user_input_features():
     return features
 
 data1 = pd.read_csv('IRIS.csv')
+st.write(data1)
+
 
 #X= data.iloc[:, :-1].values
 #Y= data.iloc[:, -1].values
