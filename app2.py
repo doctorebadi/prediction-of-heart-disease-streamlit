@@ -7,6 +7,10 @@ import sklearn
 from sklearn.model_selection import train_test_split # to split the dataset for training and testing 
 from sklearn.metrics import accuracy_score
 
+st.write("""
+# Simple Prediction of heart disease Prediction App
+""")
+
 data = pd.read_csv('Data1.csv')
 X = data.iloc[:, :-1].values
 y = data.iloc[:, -1].values
