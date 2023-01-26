@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+from sklearn import datasets
 
 st.write("""
 # Simple Iris Flower Prediction App
