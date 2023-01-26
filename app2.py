@@ -54,7 +54,6 @@ y_pred = svclassifier.predict(X_test)
 accuracy = accuracy_score(y_test, y_pred) * 100
 st.subheader('accuracy')
 st.write(accuracy)
-st.balloons()
 
 
 
@@ -69,5 +68,6 @@ st.write(df)
 st.subheader('Prediction')
 z=svclassifier.predict(df)
 st.write(z[0])
-    
+st.balloons()
+  
 
