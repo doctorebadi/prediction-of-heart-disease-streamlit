@@ -24,8 +24,7 @@ data = pd.read_csv('IRIS.csv')
 
 X= data.iloc[:, :-1].values
 Y= data.iloc[:, -1].values
-print(x)
-
+st.write(X)
 
 df = user_input_features()
 
