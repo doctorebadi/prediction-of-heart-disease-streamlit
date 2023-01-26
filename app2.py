@@ -66,8 +66,8 @@ for percent_complete in range(100):
     my_bar.progress(percent_complete + 1)
 st.write(df)
     
-#st.subheader('Prediction')
-#z=svclassifier.predict(df)
-#st.write(z[0])
+st.subheader('Prediction')
+z=svclassifier.predict(df)
+st.write(z[0])
     
 
