@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-from sklearn import datasets
 
 st.write("""
 # Simple Iris Flower Prediction App
@@ -25,7 +24,7 @@ data = pd.read_csv('IRIS.csv')
 
 X= data.iloc[:, :-1].values
 Y= data.iloc[:, -1].values
-
+print(x)
 
 
 df = user_input_features()
