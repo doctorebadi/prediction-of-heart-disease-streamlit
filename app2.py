@@ -21,5 +21,5 @@ accuracy = accuracy_score(y_test, y_pred) * 100
 st.write(accuracy)
 
 n=np.array([75,0,190,80,91,193,371,174,121,-16,13,64,-2,63,0,75,0,190,80,95,190,401,169,125,-15,13,68,12,63,0]).reshape(1,-1)
-svclassifier.predict(n)
-st.write(svclassifier.predict(n))
+z=svclassifier.predict(n)
+st.write(z)
