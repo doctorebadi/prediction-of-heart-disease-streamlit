@@ -18,7 +18,7 @@ st.sidebar.header('User Input Parameters')
 def user_input_features():
     age = st.sidebar.slider('age', 1, 79, 50)
     Height = st.sidebar.slider('Height', 10, 105, 80)
-    Weight = st.sidebar.slider('Weight', 69, 170, 5.4)
+    Weight = st.sidebar.slider('Weight', 69, 170, 85)
     QRS_duration = st.sidebar.slider('QRS_duration',0, 294, 20)
     P_R_interval = st.sidebar.slider('P_R_interval', 241, 450, 260)
     Q_T_interval = st.sidebar.slider('Q_T_interval', 0, 294, 158)
