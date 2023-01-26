@@ -1,4 +1,6 @@
 import streamlit as st
+pip install -r requirements.txt
+
 import pandas as pd
 
 st.write("""
