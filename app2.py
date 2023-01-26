@@ -4,7 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import sklearn
-data = pd.read_csv('IRIS.csv')
+data = pd.read_csv('mobile_prices.csv')
 X = data.iloc[:, :-1].values
 y = data.iloc[:, -1].values
 from sklearn.model_selection import train_test_split # to split the dataset for training and testing 
