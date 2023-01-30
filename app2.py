@@ -8,7 +8,7 @@ from sklearn.model_selection import train_test_split # to split the dataset for 
 from sklearn.metrics import accuracy_score
 
 st.write("""
-# Simple Prediction of heart disease""")
+# Prediction of heart disease""")
 
 st.sidebar.header('User Input Parameters_slider')
 def user_input_features():
