@@ -84,7 +84,7 @@ if spectra is not None:
 
 try:
     st.subheader('2-data_from_csv_file')
-    st.write(spectra_df)
+    st.write(spectra_df) 
     z1=svclassifier.predict(spectra_df)
     if(z1[0]==0):
         st.write('Prediction: With a high probability, the person does not have a heart problem')
