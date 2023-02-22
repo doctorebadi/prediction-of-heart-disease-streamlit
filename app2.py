@@ -43,8 +43,8 @@ svclassifier.fit(X_train, y_train)
 y_pred = svclassifier.predict(X_test)
 
 accuracy = accuracy_score(y_test, y_pred) * 100
-st.subheader('accuracy')
-st.write(accuracy)
+st.subheader('Accuracy')
+st.write(accuracy.style.format("{:.2}"))
 
 
 
@@ -64,9 +64,7 @@ if(z[0]==0):
 else:
     st.write('Prediction: With a high probability, the person have a heart problem')
     
-    
    
-    
 
 
 
