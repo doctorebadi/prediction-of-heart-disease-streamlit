@@ -44,7 +44,7 @@ y_pred = svclassifier.predict(X_test)
 
 accuracy = accuracy_score(y_test, y_pred) * 100
 st.subheader('Accuracy')
-st.write(accuracy.style.format("{:.2}"))
+st.write(accuracy.style.format(subset=['Position', 'Marks'], formatter="{:.2f}"))
 
 
 
